@@ -73,6 +73,9 @@ $bot->onMessage('COD', function ($bot, $request) {
     $bot->reply("Untuk *COD* harap menunggu konfirmasi dari admin untuk resi yang akan di kirimkan ke alamat anda.");
 });
 
+$bot->alias('reguler', 'REGULER');
+$bot->alias('Reguler', 'REGULER');
+
 $bot->onMessage('REGULER', function ($bot, $request) {
     $bot->reply("Untuk Pemesanan *Reguler* anda perlu membayar terlebih dahulu melalui tranfer bank dan virtual account atau ke bank bca
     BANK BCA
@@ -97,6 +100,9 @@ $bot->onMessage('REGULER', function ($bot, $request) {
     Lalu Ketik *KonfirmasiPembayaran*
 ");
 });
+
+$bot->alias('cod', 'COD');
+$bot->alias('Cod', 'COD');
 
 
 $bot->onMessage('MetodeLain', function ($bot, $request) {
@@ -235,19 +241,19 @@ $bot->onMessage('/text', function ($bot, $request) {
 
 // $bot->alias('menu', '/menu');
 
-// $bot->onMessage('menu-1', function($bot, $request) {
-//     $buttons = [
-//         'menu1-1' => 'Argentina', 
-//         'menu1-2' => 'Senegal', 
-//     ];
+$bot->onMessage('menu', function ($bot, $request) {
+    $buttons = [
+        'menu1-1' => 'Argentina',
+        'menu1-2' => 'Senegal',
+    ];
 
-//     $header = 'Kandidat Juara Piala Dunia';
-//     $footer = 'Dikirim dengan OneSender';
+    $header = 'Kandidat Juara Piala Dunia';
+    $footer = 'Dikirim dengan OneSender';
 
-//     $data = ['nama' => 'Big Bos'];
+    $data = ['nama' => 'Big Bos'];
 
-//     $bot->replyButton("Mana tim favorit kamu, {{nama}}?", $buttons, $data, $header, $footer);
-// });
+    $bot->replyButton("Mana tim favorit kamu, {{nama}}?", $buttons, $data, $header, $footer);
+});
 
 // $bot->alias('/menu-1', 'menu-1');
 
