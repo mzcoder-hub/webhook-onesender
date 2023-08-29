@@ -1,0 +1,16 @@
+{
+    "autoload": {
+        "psr-4": {
+            "App\\": "lib/app/",
+            "Pasya\\OneSender\\": "lib/onesender/"
+        }
+    },
+    "require": {
+        "mustache/mustache": "^2.14",
+        "php-ds/php-ds": "^1.4",
+        "symfony/polyfill-php80": "^1.26"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.4"
+    }
+}
