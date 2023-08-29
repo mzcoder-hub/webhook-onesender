@@ -75,26 +75,27 @@ $bot->onMessage('COD', function ($bot, $request) {
 
 $bot->onMessage('REGULER', function ($bot, $request) {
     $bot->reply("Untuk Pemesanan *Reguler* anda perlu membayar terlebih dahulu melalui tranfer bank dan virtual account atau ke bank bca
-    BANK BCA
-    _2381158057_
 
-    BANK BRI 
-    _88810082134832652_
-    
-    BANK MANDIRI 
-    _89508082134832652_
-    
-    BANK MANDIRI 
-    _852808082134832652_
-    
-    BANK BSI / BANK SYARIAH INDONESIA 
-    _852808082134832652_
+BANK BCA
+_2381158057_
 
-    Semua rekining di atas adalah atasnama *GALANG YOGA PRADANA*
+BANK BRI 
+_88810082134832652_
     
-    Lampirkan Bukti Pembayaran dan jumlah pesanan
+BANK MANDIRI 
+_89508082134832652_
     
-    Lalu Ketik *KonfirmasiPembayaran*
+BANK MANDIRI 
+_852808082134832652_
+    
+BANK BSI / BANK SYARIAH INDONESIA 
+_852808082134832652_
+
+Semua rekining di atas adalah atasnama *GALANG YOGA PRADANA*
+    
+Lampirkan Bukti Pembayaran dan jumlah pesanan
+    
+Lalu Ketik *KonfirmasiPembayaran*
 ");
 });
 
