@@ -64,20 +64,20 @@ $bot = new AutoReply($config);
 // ");
 
 $bot->onMessage('Benar', function ($bot, $request) {
-    $bot->reply("Termakasih Atas Konfirmasinya, Tolong Baca Pesan dibawah ini : ");
-    $bot->reply("Orderan Anda Menggunakan Metode *COD* atau *REGULER* ? ");
+    $bot->reply("Termakasih Atas Konfirmasinya, Orderan Anda Menggunakan Metode *COD* atau *REGULER* ?    ");
 });
 
 $bot->alias('benar', 'Benar');
 
 $bot->onMessage('COD', function ($bot, $request) {
-    $bot->reply("Termakasih Atas Konfirmasinya, Tolong Baca Pesan dibawah ini : ");
-    $bot->reply("Orderan Anda Menggunakan Metode *COD* atau *REGULER* ? ");
+    $bot->reply("Untuk *COD* harap menunggu konfirmasi dari admin untuk resi yang akan di kirimkan ke alamat anda.");
 });
 
 $bot->onMessage('REGULER', function ($bot, $request) {
-    $bot->reply("Untuk metode reguler anda perlu membayar terlebih dahulu melalui tranfer bank dan virtual account");
-    $bot->reply("
+    $bot->reply("Untuk Pemesanan *Reguler* anda perlu membayar terlebih dahulu melalui tranfer bank dan virtual account atau ke bank bca
+    BANK BCA
+    _2381158057_
+
     BANK BRI 
     _88810082134832652_
     
@@ -89,11 +89,13 @@ $bot->onMessage('REGULER', function ($bot, $request) {
     
     BANK BSI / BANK SYARIAH INDONESIA 
     _852808082134832652_
+
+    Semua rekining di atas adalah atasnama *GALANG YOGA PRADANA*
     
     Lampirkan Bukti Pembayaran dan jumlah pesanan
     
     Lalu Ketik *KonfirmasiPembayaran*
-    ");
+");
 });
 
 
